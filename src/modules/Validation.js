@@ -1,5 +1,4 @@
 import MESSAGE from "../contants/message";
-import CONDITION from "../contants/condition";
 
 class Validation {
   static getNumberOfCar(answer, limitLength) {
@@ -15,4 +14,13 @@ class Validation {
     });
     return info;
   }
+  static getNumberOfTimes(answer) {
+    const number = Number(answer);
+    if (Number.parseInt(number) && number > 0) {
+      return number;
+    }
+    throw new Error(MESSAGE.error.numberOfTimes);
+  }
 }
+
+export default Validation;
