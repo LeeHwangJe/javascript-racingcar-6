@@ -9,4 +9,9 @@ const MESSAGE = {
     duplicateName: "[ERROR] 중복된 이름이 있습니다. 확인해주세요.",
     numberOfTimes: "[ERROR] 1이상의 숫자를 입력하세요.",
   },
+  result: {
+    execution: "\n실행 결과",
+    distance: "-",
+    winner: "최종 우승자 : ",
+  },
 };
