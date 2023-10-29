@@ -15,3 +15,5 @@ const MESSAGE = {
     winner: "최종 우승자 : ",
   },
 };
+
+export default MESSAGE;
