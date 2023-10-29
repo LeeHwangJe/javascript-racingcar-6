@@ -23,7 +23,10 @@ class App {
     this.#numberOfTimes = number;
   }
 
-  async play() {}
+  async play() {
+    const playOfCars = await Console.readLineAsync(MESSAGE.input.carName);
+    this.cars = 
+  }
 }
 
 export default App;
