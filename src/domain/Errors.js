@@ -8,4 +8,10 @@ export const userInputDuplicatedError = (carNameArray) => {
   }
 };
 
-export const userInputCarNameLengthError = (carNameArray) => {};
+export const userInputCarNameLengthError = (carNameArray) => {
+  for (let i = 0; i < carNameArray.length; i++) {
+    if (carNameArray[i].length > 5) {
+      throw new Error(ERROR_MESSAGE.LONG_LENGTH);
+    }
+  }
+};
