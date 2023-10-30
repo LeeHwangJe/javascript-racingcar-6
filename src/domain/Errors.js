@@ -15,3 +15,11 @@ export const userInputCarNameLengthError = (carNameArray) => {
     }
   }
 };
+
+export const userInputTryNumberError = (tryNumber) => {
+  if (tryNumber <= 0) {
+    throw new Error(ERROR_MESSAGE.WRONG_TYPE);
+  } elif (tryNumber %1 !==0 || isNaN(tryNumber)) {
+    throw new Error(ERROR_MESSAGE.WRONG_TYPE)
+  }
+};
