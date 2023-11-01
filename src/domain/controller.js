@@ -33,3 +33,16 @@ export const finalWinnerResultAndSort = (result, carNamesArray, countArr) => {
   }
   return (result = result.sort((a, b) => b[1] - a[1]));
 };
+
+export const makeWinnerArray = (winner, result, k) => {
+  for (let i = 0; i < k; i++) {
+    winners.push(result[i][0]);
+  }
+};
+
+export const howManyFirstCars = (result, k) => {
+  for (let i = 0; i < result.length - 1; i++) {
+    k = i;
+    return k;
+  }
+};
