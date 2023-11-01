@@ -14,3 +14,22 @@ export const makeRandomNumberJudge = async (tryNumber) => {
 export const makeRandomNumberJudgeTest = async (input) => {
   input >= 4 ? "go" : "stop";
 };
+
+export const makeEmptyArray = (carNamesArray, array) => {
+  for (let i = 0; i < carNamesArray.length; i++) {
+    array.push([]);
+  }
+};
+
+export const resultjudge = (result, countArr, i, j) => {
+  if (result[j][i] != 0) {
+    countArr[j].push("-");
+  }
+};
+
+export const finalWinnerResultAndSort = (result, carNamesArray, countArr) => {
+  for (let i = 0; i < carNamesArray.length; i++) {
+    result.push([carNamesArray[i], countArr[i]]);
+  }
+  return (result = result.sort((a, b) => b[1] - a[1]));
+};
